@@ -1,0 +1,18 @@
+//Find Largest Number in Array
+// [2, 8, 1, 15, 4]  ---  15
+
+function largestNumber(arr) {
+
+    let maxnum = arr[0];
+
+    for (let i = 1; i < arr.length; i++) {
+
+        if (arr[i] > maxnum) {
+            maxnum = arr[i];
+        }
+    }
+
+    return maxnum;
+}
+
+console.log(largestNumber([2, 8, 1, 15, 4])); // 15
